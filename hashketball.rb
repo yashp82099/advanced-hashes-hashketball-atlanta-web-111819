@@ -319,10 +319,11 @@ def long_name_steals_a_ton?
     if x.length > name.length
       name = x
       players_steal = y[:steals]
-      p players_steal
+    
     end
     if y[:steals] > higest_steals
       y[:steals] = higest_steals
+      
     end 
   end 
   game_hash[:away][:players].each do |x,y|
@@ -334,7 +335,8 @@ def long_name_steals_a_ton?
       y[:steals] = higest_steals
     end 
   end 
-  
+  p players_steal
+  p higest_steals
   if players_steal == higest_steals
     return "true"
   else 
