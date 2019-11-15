@@ -321,9 +321,9 @@ def long_name_steals_a_ton?
       players_steal = y[:steals]
     
     end
-    p y[:steals]
+  
     if y[:steals] > higest_steals
-      y[:steals] = higest_steals
+      higest_steals = y[:steals]
       
     end 
   end 
@@ -333,7 +333,7 @@ def long_name_steals_a_ton?
       players_steal = y[:steals]
     end 
     if y[:steals] > higest_steals
-      y[:steals] = higest_steals
+      higest_steals = y[:steals]
     end 
   end 
   p players_steal
