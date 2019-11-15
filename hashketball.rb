@@ -339,9 +339,9 @@ def long_name_steals_a_ton?
   p players_steal
   p higest_steals
   if players_steal == higest_steals
-    return "true"
+    return true
   else 
-    return "false"
+    return false
   end 
   
   
